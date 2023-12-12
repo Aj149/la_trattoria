@@ -1,0 +1,40 @@
+<body>
+  <div class="container">
+    <div class="container-content">
+        <h2>LATRATTORIA</h2>
+        <form action="" method="POST">
+            <table class="table">
+                <h4> reserva.nombre + " " + reserva.apellido </h4>
+                <tr>
+                    <th>Fecha</th>
+                    <td><input type="text" name="fecha" class="form-control" value=" reserva.fecha "></td>
+                </tr>
+                <tr>
+                    <th>Cantidad de personas</th>
+                    <td><input type="text" name="cantidadepersonas" class="form-control" value=" reserva.cantidadepersonas "></td>
+                </tr>
+                <tr>
+                    <th>ID de cédula</th>
+                    <td><input type="text" name="idcedula" class="form-control" value=" reserva.idcedula "></td>
+                </tr>
+                <tr>
+                    <th>Nombre de ambiente</th>
+                    <td>
+                        <select class="form-control custom-select" name="ida" required>
+                             for ambiente in ambientes
+                            <option value=" ambiente.idambiente "> ambiente.nombreambiente </option>
+                             endfor
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="submit" value="Actualizar" class="btn btn-success">
+                        <a routerLink="/register" class="btn btn-dark">Cancelar</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>

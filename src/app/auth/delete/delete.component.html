@@ -1,0 +1,41 @@
+<body>
+
+  <div class="container">
+    <div class="container-content">
+      <h2 class="text-danger text-center">LATRATTORIA</h2>
+      <h3>ambientes.nombre + " " + ambientes.apellido </h3>
+
+      <table class="table">
+          <tbody>
+              <tr>
+                  <th>Numero de reserva</th>
+                  <td>reservas.idreserva </td>
+                </tr>
+                <tr>
+                  <th>Fecha</th>
+                  <td> reservas.fecha </td>
+                </tr>
+                <tr>
+                  <th>Numero de comensales</th>
+                  <td> reservas.cantidadepersonas </td>
+                </tr>
+                <tr>
+                  <th>Numero de cedula</th>
+                  <td> reservas.idcedula </td>
+              </tr>
+              <tr>
+                <th>Nombre de ambiente</th>
+                  <td> ambientes.nombreambiente </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <form action="" method="post">
+          <p>Confirmar si desea eliminar el dato</p>
+          <input type="submit" value="Si" class="btn btn-danger">
+          <a routerLink="/register" class="btn btn-dark">No</a>
+        </form>
+  </div>
+</div>
+
+</body>

@@ -1,0 +1,37 @@
+.input-container {
+  position: relative;
+}
+
+span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 70%;
+}
+
+.img1 {
+  width: 2em;
+  height: auto;
+  margin-right: 0.5em;
+}
+
+input {
+  padding-left: 3em;
+}
+
+
+@media screen and (max-width: 600px) {
+  span {
+    left: 65%;
+  }
+
+  .img1 {
+    width: 1.5em;
+    margin-right: 0.3em;
+  }
+
+  input {
+    padding-left: 2em;
+  }
+}
+

@@ -1,0 +1,8 @@
+.custom-container {
+  border-radius: 20px;
+  border: 2px solid #fff;
+  background: linear-gradient(to bottom right, #c2d8df, rgb(205, 190, 190));
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px;
+}
